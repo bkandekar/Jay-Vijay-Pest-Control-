@@ -1,0 +1,6 @@
+{
+  "name": "Jay Vijay Pest Control",
+  "description": "Professional pest control services in Maharashtra, India. Licensed, eco-friendly, and child/pet safe treatment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Shield Outline / Base -->
+    <path
+        android:fillColor="#FCA311"
+        android:pathData="M54,24 L30,34 V52 C30,67.2 40.2,80.8 54,84 C67.8,80.8 78,67.2 78,52 V34 L54,24 Z" />
+    <!-- Inner Shield Checkmark / Bug Protection Symbol -->
+    <path
+        android:fillColor="#14213D"
+        android:pathData="M50,60 L40,50 L43.5,46.5 L50,53 L64.5,38.5 L68,42 L50,60 Z" />
+</vector>
