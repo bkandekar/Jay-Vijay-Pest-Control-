@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Construct WhatsApp Redirect URL
             // Target Phone Number: +91 83299 31123 (replace with client's real number)
-            const whatsappPhoneNumber = '8329931123';
+            const whatsappPhoneNumber = '+91 8329931123';
             const optionalMsgVal = messageInput ? messageInput.value.trim() : '';
 
             let formattedMsg = `Hi, I want pest control service.\n`;
