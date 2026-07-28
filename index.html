@@ -3,938 +3,762 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Vijay Pest Control | Solapur's Most Trusted Pest Control Team</title>
-    <meta name="description" content="Jay Vijay Pest Control provides 100% safe, odorless, government-certified pest control services across Solapur district. 15 years experience & 10,000+ happy customers. Get instant quote!">
+    <meta name="description" content="PV Pest Control Services - Professional pest control solutions in Amravati, Maharashtra. Expert termite, cockroach, bed bug, rodent, and mosquito treatment with guaranteed results.">
+    <meta name="keywords" content="pest control, termite control, cockroach control, bed bug treatment, rodent control, mosquito control, AMC pest control, Amravati, Maharashtra">
+    <title>PV Pest Control Services | Professional Pest Control in Amravati</title>
     
-    <!-- Google Fonts: Space Grotesk & Inter -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon Placeholder -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Analytics 4 (GA4) Snippet -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
-
-    <!-- LocalBusiness JSON-LD Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Jay Vijay Pest Control",
-      "telephone": "+919067257872",
-      "email": "info@jayvijaypestcontrol.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "10 B Sonamata nagar, New RTO Road, Vijapur Rd",
-        "addressLocality": "Solapur",
-        "addressRegion": "Maharashtra",
-        "postalCode": "413004",
-        "addressCountry": "IN"
-      },
-      "url": "https://jayvijaypestcontrol.com",
-      "priceRange": "₹1499 - ₹12000",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1280"
-      }
-    }
-    </script>
+    
+    <!-- Defer non-critical JS -->
+    <script src="script.js" defer></script>
 </head>
-<body class="theme-urban-guard">
-
-    <!-- 1. HEADER & NAVIGATION -->
-    <header class="site-header" id="header">
-        <div class="container header-inner">
-            <a href="#hero" class="brand-logo" aria-label="Jay Vijay Pest Control Home">
+<body>
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
                 <span class="logo-icon">🛡️</span>
-                <span class="logo-text">Jay Vijay <span class="accent-text">Pest Control</span></span>
+                <span class="logo-text">PV Pest Control Services</span>
             </a>
-
-            <nav class="main-nav" aria-label="Main Navigation">
+            <nav class="nav" id="nav">
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="nav-list">
-                    <li><a href="#hero" class="nav-link">Home</a></li>
-                    <li><a href="#design-showcase" class="nav-link">Pest Radar</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#calculator" class="nav-link">Calculator</a></li>
                     <li><a href="#why-us" class="nav-link">Why Us</a></li>
-                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li><a href="#pricing" class="nav-link">AMC Plans</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-
-            <div class="header-actions">
-                <button class="theme-pill-trigger theme-trigger-btn" type="button" aria-label="Customize theme design">
-                    🎨 <span>Theme Studio</span>
-                </button>
-                <a href="tel:+919067257872" class="phone-link">
-                    <span class="phone-icon">📞</span>
-                    <span class="phone-number">+91 90672 57872</span>
-                </a>
-                <button class="btn btn-orange open-modal-btn" data-service="General Consultation">Get Free Quote</button>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+            <a href="#" class="btn btn-primary btn-book-now" id="header-book-btn">
+                <span>Book Now</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
         </div>
     </header>
 
-    <main>
-        <!-- 2. HERO SECTION (BENTO GRID LAYOUT) -->
-        <section class="hero-section" id="hero">
-            <div class="container">
-                <div class="hero-bento-grid">
-                    <!-- Main Headline Bento Card -->
-                    <div class="bento-card bento-hero-main">
-                        <div>
-                            <div class="hero-badge">
-                                <span class="pulse-dot"></span>
-                                Government Certified • Solapur District • License #MH-8329
-                            </div>
-                            <h1 class="hero-title">
-                                Solapur's Most Trusted <br>
-                                <span class="highlight-lime">Pest Control</span> Experts
-                            </h1>
-                            <p class="hero-subtitle">
-                                15 years of trusted service protecting homes, offices, commercial spaces & societies across Solapur district. 10,000+ satisfied clients, zero hassle, instant quote.
-                            </p>
-                        </div>
-                        
-                        <div>
-                            <div class="hero-cta-group">
-                                <a href="#calculator" class="btn btn-orange btn-lg">
-                                    🧮 Use Instant Price Calculator
-                                </a>
-                                <button class="btn btn-outline-lime btn-lg open-modal-btn" data-service="Free Site Inspection">
-                                    📋 Book Free Site Inspection
-                                </button>
-                            </div>
-                            
-                            <!-- Vector Hero Illustration -->
-<div class="hero-vector-wrapper photo-placeholder-wrapper">
-    <img src="images/hero-bg.jpg" alt="Jay Vijay Pest Control technician treating a Solapur home">
-    <span class="img-placeholder-label">images/hero-bg.jpg</span>
-</div>
-                        </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <div class="badge">
+                        <span class="badge-icon">✅</span>
+                        <span>10000+ Homes Protected</span>
                     </div>
-
-                    <!-- Trust Stat Bento Card -->
-                    <div class="bento-card bento-trust-card">
-                        <div class="trust-stars">⭐⭐⭐⭐⭐</div>
-                        <div class="trust-stat-num">10,000+</div>
-                        <div class="trust-stat-label">Solapur Properties Eradicated & Shielded</div>
-                        <div class="trust-tags">
-                            <span class="tag">🏆 15 Years Experience</span>
-                            <span class="tag">🌱 Non-Toxic Herbal</span>
-                            <span class="tag">📜 Written Warranty</span>
-                        </div>
+                    <div class="badge">
+                        <span class="badge-icon">🏆</span>
+                        <span>Govt. Certified</span>
                     </div>
+                    <div class="badge">
+                        <span class="badge-icon">👶</span>
+                        <span>100% Safe for Kids & Pets</span>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Professional Pest Control</span>
+                    <span class="title-highlight">Solutions in Amravati</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Expert termite, cockroach, bed bug, rodent, and mosquito treatment with guaranteed results. 
+                    Serving Amravati and surrounding areas with 10+ years of experience.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#" class="btn btn-primary btn-book-now" id="hero-book-btn">
+                        <span>Book Now</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#calculator" class="btn btn-secondary">
+                        <span class="btn-icon">💰</span>
+                        <span>Calculate Your Treatment Cost</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-box" data-placeholder-id="hero-banner">
+                    [PLACEHOLDER: Hero Banner — create in Google Drawings, 1600x900px, technician spraying a modern home exterior]
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </section>
 
-                    <!-- Instant Calculator Teaser Card -->
-                    <div class="bento-card bento-calc-teaser">
-                        <div>
-                            <div class="teaser-icon">⚡</div>
-                            <h3>Instant Price Calculator</h3>
-                            <p>Select your home size and pest problem for a transparent cost estimate in 30 seconds.</p>
-                        </div>
-                        <a href="#calculator" class="teaser-link">Calculate My Price →</a>
+    <!-- Pain Points → Solutions Section -->
+    <section class="pain-solutions" id="problems">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Common Problems</span>
+                <h2 class="section-title">Pest Issues? We Have Solutions</h2>
+                <p class="section-subtitle">
+                    From stubborn termites to disease-carrying mosquitoes, we tackle all pest problems with scientific precision.
+                </p>
+            </div>
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon">🐜</div>
+                    <h3>Cockroach Infestation</h3>
+                    <p>Rapidly multiplying cockroaches in your kitchen and bathroom spreading diseases.</p>
+                    <div class="pain-solution">
+                        <span class="solution-icon">✅</span>
+                        <span>Gel bait & spray treatment</span>
+                    </div>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🐜</div>
+                    <h3>Termite Damage</h3>
+                    <p>Silent destroyers eating away at your wooden furniture and structure.</p>
+                    <div class="pain-solution">
+                        <span class="solution-icon">✅</span>
+                        <span>Pre & post-construction anti-termite</span>
+                    </div>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🦟</div>
+                    <h3>Mosquito Menace</h3>
+                    <p>Dengue and malaria causing mosquitoes breeding in your premises.</p>
+                    <div class="pain-solution">
+                        <span class="solution-icon">✅</span>
+                        <span>Fogging & larval treatment</span>
+                    </div>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🐀</div>
+                    <h3>Rodent Problem</h3>
+                    <p>Rats and mice damaging wires, food, and spreading contamination.</p>
+                    <div class="pain-solution">
+                        <span class="solution-icon">✅</span>
+                        <span>Trapping & rodenticide treatment</span>
+                    </div>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🛏️</div>
+                    <h3>Bed Bug Bites</h3>
+                    <p>Sleepless nights due to itchy bed bug bites in your mattress and furniture.</p>
+                    <div class="pain-solution">
+                        <span class="solution-icon">✅</span>
+                        <span>Steam & chemical treatment</span>
+                    </div>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon">🪲</div>
+                    <h3>Wood Borer Attack</h3>
+                    <p>Wooden furniture and doors being destroyed by borer beetles.</p>
+                    <div class="pain-solution">
+                        <span class="solution-icon">✅</span>
+                        <span>Injection & spray treatment</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 3. TRUST & STATS BAR -->
-        <section class="stats-bar-section">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-icon">⏱️</div>
-                        <div>
-                            <div class="stat-number" data-target="30">0</div>
-                            <span class="stat-unit">Min</span>
-                            <span class="stat-label">Fast Emergency Response</span>
+    <!-- Instant Pest Treatment Calculator -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing Tool</span>
+                <h2 class="section-title">Instant Pest Treatment Calculator</h2>
+                <p class="section-subtitle">
+                    Get an estimated cost for your pest control treatment in seconds. No obligation, no hassle.
+                </p>
+            </div>
+            <div class="calculator-card">
+                <form class="calculator-form" id="calculator-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="property-type">Property Type</label>
+                            <select id="property-type" class="form-select">
+                                <option value="">Select Property Type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="house">Independent House</option>
+                                <option value="shop">Shop</option>
+                                <option value="office">Office</option>
+                                <option value="warehouse">Warehouse</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="property-size">Property Size</label>
+                            <select id="property-size" class="form-select">
+                                <option value="">Select Property Size</option>
+                                <option value="under-500">Under 500 sq ft</option>
+                                <option value="500-1000">500–1000 sq ft</option>
+                                <option value="1000-2000">1000–2000 sq ft</option>
+                                <option value="over-2000">2000+ sq ft</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pest-concern">Pest Concern</label>
+                            <select id="pest-concern" class="form-select">
+                                <option value="">Select Pest Type</option>
+                                <option value="general">General Pests</option>
+                                <option value="termites">Termites</option>
+                                <option value="cockroaches">Cockroaches</option>
+                                <option value="bed-bugs">Bed Bugs</option>
+                                <option value="rodents">Rodents</option>
+                                <option value="mosquitoes">Mosquitoes</option>
+                                <option value="wood-borer">Wood Borer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="treatment-frequency">Treatment Frequency</label>
+                            <select id="treatment-frequency" class="form-select">
+                                <option value="">Select Frequency</option>
+                                <option value="one-time">One-Time</option>
+                                <option value="quarterly">Quarterly AMC</option>
+                                <option value="annual">Annual AMC</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">🛡️</div>
-                        <div>
-                            <span class="stat-number" data-target="15">0</span>
-                            <span class="stat-plus">Yr</span>
-                            <span class="stat-label">Years Solapur Experience</span>
+                    
+                    <div class="calculator-result" id="calculator-result">
+                        <div class="result-display">
+                            <span class="result-label">Estimated Cost:</span>
+                            <span class="result-value" id="estimated-cost">Select options to calculate</span>
                         </div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">🧪</div>
-                        <div>
-                            <span class="stat-number" data-target="10000">0</span>
-                            <span class="stat-plus">+</span>
-                            <span class="stat-label">Satisfied Solapur Clients</span>
+                        <div class="result-note">
+                            <span class="note-icon">ℹ️</span>
+                            <span>*Final price confirmed after free on-site inspection.</span>
                         </div>
+                        <div class="result-discount" id="discount-badge"></div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-icon">😊</div>
-                        <div>
-                            <span class="stat-number" data-target="100">0</span>
-                            <span class="stat-plus">%</span>
-                            <span class="stat-label">Customer Satisfaction Guarantee</span>
-                        </div>
+                    
+                    <button type="button" class="btn btn-primary btn-full" id="book-package-btn" disabled>
+                        <span>Book This Package</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Pest Control Services</h2>
+                <p class="section-subtitle">
+                    Comprehensive pest management solutions tailored to your needs. From residential to commercial properties.
+                </p>
+            </div>
+            <div class="services-carousel">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>General Pest Control</h3>
+                    <p>Complete protection against cockroaches, ants, spiders, lizards, and other common household pests.</p>
+                    <div class="service-meta">
+                        <span class="service-duration">⏱️ 2-4 hours</span>
+                        <span class="service-warranty">🛡️ 3 months warranty</span>
                     </div>
+                    <a href="#" class="btn btn-secondary btn-book-service" data-service="General Pest Control">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪲</div>
+                    <h3>Termite Control</h3>
+                    <p>Pre and post-construction anti-termite treatment to protect your property from silent destroyers.</p>
+                    <div class="service-meta">
+                        <span class="service-duration">⏱️ 4-8 hours</span>
+                        <span class="service-warranty">🛡️ 5 years warranty</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-book-service" data-service="Termite Control">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪳</div>
+                    <h3>Cockroach Control</h3>
+                    <p>Targeted gel bait and spray treatments to eliminate cockroach infestations completely.</p>
+                    <div class="service-meta">
+                        <span class="service-duration">⏱️ 1-2 hours</span>
+                        <span class="service-warranty">🛡️ 6 months warranty</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-book-service" data-service="Cockroach Control">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛏️</div>
+                    <h3>Bed Bug Treatment</h3>
+                    <p>Steam and chemical treatments to eradicate bed bugs from mattresses, furniture, and luggage.</p>
+                    <div class="service-meta">
+                        <span class="service-duration">⏱️ 3-6 hours</span>
+                        <span class="service-warranty">🛡️ 1 year warranty</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-book-service" data-service="Bed Bug Treatment">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🐀</div>
+                    <h3>Rodent Control</h3>
+                    <p>Professional trapping and rodenticide treatments to eliminate rats and mice from your property.</p>
+                    <div class="service-meta">
+                        <span class="service-duration">⏱️ 2-3 hours</span>
+                        <span class="service-warranty">🛡️ 6 months warranty</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-book-service" data-service="Rodent Control">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🦟</div>
+                    <h3>Mosquito Control</h3>
+                    <p>Fogging and larval treatments to eliminate mosquitoes and prevent dengue, malaria, and chikungunya.</p>
+                    <div class="service-meta">
+                        <span class="service-duration">⏱️ 1-2 hours</span>
+                        <span class="service-warranty">🛡️ 3 months warranty</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-book-service" data-service="Mosquito Control">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪵</div>
+                    <h3>Wood Borer Treatment</h3>
+                    <p>Specialized injection and spray treatments to protect wooden furniture and structures from borer beetles.</p>
+                    <div class="service-meta">
+                        <span class="service-duration">⏱️ 2-4 hours</span>
+                        <span class="service-warranty">🛡️ 2 years warranty</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-book-service" data-service="Wood Borer Treatment">Book Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📅</div>
+                    <h3>Annual Maintenance Contract (AMC)</h3>
+                    <p>Comprehensive yearly pest control packages with scheduled treatments and priority service.</p>
+                    <div class="service-meta">
+                        <span class="service-duration">⏱️ Custom schedule</span>
+                        <span class="service-warranty">🛡️ Full year coverage</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary btn-book-service" data-service="Annual Maintenance Contract (AMC)">Book Now</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 4. DESIGN SHOWCASE & INTERACTIVE PEST RISK RADAR -->
-        <section class="design-showcase-section" id="design-showcase">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="eyebrow-text">INTERACTIVE DESIGN STUDIO</span>
-                    <h2 class="section-title">Pest Identification & Risk Radar</h2>
-                    <p class="section-subtitle">Click on any pest category below to inspect infestation levels, target formulations, and specialized treatment safety ratings.</p>
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why PV Pest Control</span>
+                <h2 class="section-title">Why Choose Us?</h2>
+                <p class="section-subtitle">
+                    With 10+ years of experience and 10,000+ satisfied customers, we deliver professional pest control services you can trust.
+                </p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🏠</div>
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-label">Homes & Businesses Served</div>
                 </div>
-
-                <!-- Radar Grid Cards -->
-                <div class="pest-radar-grid">
-                    <!-- Pest 1 -->
-                    <div class="radar-card active" data-pest="German Cockroach">
-                        <div class="radar-card-header">
-                            <div class="radar-icon-badge">🪳</div>
-                            <span class="risk-tag risk-high">High Infestation Risk</span>
-                        </div>
-                        <h3 class="radar-title">German & American Cockroach</h3>
-                        <p class="radar-spec">Targets kitchen cabinets, drain pipes & food areas. Uses odorless Bayer gel technology.</p>
-                        <div class="radar-meter-label">
-                            <span>Eradication Speed</span>
-                            <span>48 Hours</span>
-                        </div>
-                        <div class="radar-progress-bar">
-                            <div class="radar-progress-fill" style="width: 95%;"></div>
-                        </div>
-                    </div>
-
-                    <!-- Pest 2 -->
-                    <div class="radar-card" data-pest="Subterranean Termite">
-                        <div class="radar-card-header">
-                            <div class="radar-icon-badge">🪵</div>
-                            <span class="risk-tag risk-severe">Severe Structural Hazard</span>
-                        </div>
-                        <h3 class="radar-title">Subterranean Termite Barrier</h3>
-                        <p class="radar-spec">Drill-Fill-Seal chemical barrier deep into wall junctions with 5-year written guarantee.</p>
-                        <div class="radar-meter-label">
-                            <span>Barrier Protection</span>
-                            <span>5 Years</span>
-                        </div>
-                        <div class="radar-progress-bar">
-                            <div class="radar-progress-fill" style="width: 100%;"></div>
-                        </div>
-                    </div>
-
-                    <!-- Pest 3 -->
-                    <div class="radar-card" data-pest="Bed Bug Thermal">
-                        <div class="radar-card-header">
-                            <div class="radar-icon-badge">🛏️</div>
-                            <span class="risk-tag risk-high">High Nuisance</span>
-                        </div>
-                        <h3 class="radar-title">Bed Bug Thermal Spray</h3>
-                        <p class="radar-spec">Dual-stage heat and micro-emulsion mist targeting adult bugs and unhatched eggs.</p>
-                        <div class="radar-meter-label">
-                            <span>Nest Elimination</span>
-                            <span>100% Eggs & Adults</span>
-                        </div>
-                        <div class="radar-progress-bar">
-                            <div class="radar-progress-fill" style="width: 90%;"></div>
-                        </div>
-                    </div>
-
-                    <!-- Pest 4 -->
-                    <div class="radar-card" data-pest="Rodent Mesh Sealing">
-                        <div class="radar-card-header">
-                            <div class="radar-icon-badge">🐀</div>
-                            <span class="risk-tag risk-severe">Contamination Threat</span>
-                        </div>
-                        <h3 class="radar-title">Rodent & Mouse Exclusion</h3>
-                        <p class="radar-spec">Stainless steel wire mesh entry sealing, bait stations, and glue boards for kitchens & warehouses.</p>
-                        <div class="radar-meter-label">
-                            <span>Entry Blocking</span>
-                            <span>Full Perimeter</span>
-                        </div>
-                        <div class="radar-progress-bar">
-                            <div class="radar-progress-fill" style="width: 92%;"></div>
-                        </div>
-                    </div>
-
-                    <!-- Pest 5 -->
-                    <div class="radar-card" data-pest="Mosquito Larvicidal">
-                        <div class="radar-card-header">
-                            <div class="radar-icon-badge">🦟</div>
-                            <span class="risk-tag risk-moderate">Vector Hazard</span>
-                        </div>
-                        <h3 class="radar-title">Mosquito & Vector Fogging</h3>
-                        <p class="radar-spec">Odorless cold fogging and larvicidal anti-dengue spray for gardens, balconies & societies.</p>
-                        <div class="radar-meter-label">
-                            <span>Breeding Control</span>
-                            <span>Immediate Relief</span>
-                        </div>
-                        <div class="radar-progress-bar">
-                            <div class="radar-progress-fill" style="width: 88%;"></div>
-                        </div>
-                    </div>
-
-                    <!-- Pest 6 -->
-                    <div class="radar-card" data-pest="Woodborer Powder Beetle">
-                        <div class="radar-card-header">
-                            <div class="radar-icon-badge">🚪</div>
-                            <span class="risk-tag risk-moderate">Furniture Damage</span>
-                        </div>
-                        <h3 class="radar-title">Woodborer Syringe Injection</h3>
-                        <p class="radar-spec">Specialized oil-based syringe treatment penetrating deep inside wooden doors & furniture.</p>
-                        <div class="radar-meter-label">
-                            <span>Deep Penetration</span>
-                            <span>100% Timber Safe</span>
-                        </div>
-                        <div class="radar-progress-bar">
-                            <div class="radar-progress-fill" style="width: 85%;"></div>
-                        </div>
-                    </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Years in Business</div>
                 </div>
-
-                <!-- Interactive Draggable Before & After Slider Widget -->
-                <div style="margin-top: 4rem;">
-                    <div class="section-header text-center">
-                        <span class="eyebrow-text">DRAGGABLE VISUAL COMPARISON</span>
-                        <h2 class="section-title">Drag to Reveal Clean Restored Space</h2>
-                        <p class="section-subtitle">Slide left and right to inspect the dramatic before and after transformation achieved by Jay Vijay Pest Control.</p>
-                    </div>
-
-                    <div class="before-after-slider-container" id="beforeAfterContainer">
-                        <!-- After Layer (Clean Restored) -->
-                        <div class="slider-img-layer after-layer photo-placeholder-wrapper">
-    <img src="images/After pest control treatment.webp" alt="After pest control treatment — clean, restored space">
-    <span class="img-placeholder-label">images/after.webp</span>
-</div>
-
-<div class="slider-img-layer before-layer photo-placeholder-wrapper" id="beforeLayer">
-    <img src="images/Before pest control treatment.webp" alt="Before pest control treatment — visible infestation">
-    <span class="img-placeholder-label">images/before.webp</span>
-</div>
-
-                        <!-- Before Layer (Infested Area) -->
-         <!-- Drag Handle -->
-                        <div class="slider-handle" id="sliderHandle">
-                            <div class="slider-handle-circle">↔</div>
-                        </div>
-                    </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% Success Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👨‍🔬</div>
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Certified Technicians</div>
                 </div>
             </div>
-        </section>
-
-        <!-- 5. INSTANT PEST TREATMENT CALCULATOR -->
-        <section class="calculator-section" id="calculator">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="eyebrow-text">TRANSPARENT PRICING TOOL</span>
-                    <h2 class="section-title">Instant Pest Treatment Cost Calculator</h2>
-                    <p class="section-subtitle">No hidden fees, no surprise inspection charges. Calculate your instant quote right now.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Guaranteed Results</h3>
+                    <p>We stand behind our work with comprehensive warranties on all our treatments.</p>
                 </div>
-
-                <div class="calculator-card dark-card">
-                    <div class="calc-step-block">
-                        <div class="step-header">
-                            <span class="step-num">Step 1</span>
-                            <h4>Select Property Size / Type</h4>
-                        </div>
-                        <div class="pill-group" id="propertyTypeGroup">
-                            <button type="button" class="pill-btn active" data-type="1 BHK" data-base="0">1 BHK Flat</button>
-                            <button type="button" class="pill-btn" data-type="2 BHK" data-base="500">2 BHK Flat (+₹500)</button>
-                            <button type="button" class="pill-btn" data-type="3 BHK" data-base="1000">3 BHK Flat (+₹1,000)</button>
-                            <button type="button" class="pill-btn" data-type="Villa / Bunglow" data-base="2000">Villa / Bunglow (+₹2,000)</button>
-                            <button type="button" class="pill-btn" data-type="Commercial / Office" data-base="1500">Commercial Office (+₹1,500)</button>
-                        </div>
-                    </div>
-
-                    <div class="calc-step-block">
-                        <div class="step-header">
-                            <span class="step-num">Step 2</span>
-                            <h4>Select Pest Services Required</h4>
-                        </div>
-                        <div class="pill-group" id="pestServicesGroup">
-                            <button type="button" class="pill-btn multi-select active" data-service="Cockroach" data-price="1499">Cockroach (₹1,499)</button>
-                            <button type="button" class="pill-btn multi-select" data-service="Rodent" data-price="1999">Rodent (₹1,999)</button>
-                            <button type="button" class="pill-btn multi-select" data-service="Termite 5-Yr" data-price="8999">Termite 5-Yr (₹8,999)</button>
-                            <button type="button" class="pill-btn multi-select" data-service="Bed Bug" data-price="2499">Bed Bug (₹2,499)</button>
-                            <button type="button" class="pill-btn multi-select" data-service="Sanitization" data-price="1499">Sanitization (₹1,499)</button>
-                        </div>
-                    </div>
-
-                    <div class="calc-step-block">
-                        <div class="step-header">
-                            <span class="step-num">Step 3</span>
-                            <h4>Service Plan</h4>
-                        </div>
-                        <div class="pill-group" id="planTypeGroup">
-                            <button type="button" class="pill-btn active" data-plan="Single Visit" data-discount="0">Single Visit Treatment</button>
-                            <button type="button" class="pill-btn" data-plan="Annual Maintenance Contract (AMC)" data-discount="0.2">Annual Maintenance Contract (20% OFF)</button>
-                        </div>
-                    </div>
-
-                    <!-- Live Estimate Output Card -->
-                    <div class="live-estimate-card">
-                        <div class="estimate-meta">
-                            <span class="estimate-label">ESTIMATED INSTANT PRICE</span>
-                            <div class="estimate-price-display">
-                                <span class="currency-symbol">₹</span>
-                                <span id="calcTotalDisplay" class="calc-price-value">1,499</span>
-                            </div>
-                            <p class="estimate-summary-text" id="calcSummaryText">1 BHK • Cockroach Control • Single Visit</p>
-                        </div>
-                        <button type="button" class="btn btn-orange btn-lg full-width" id="calcWhatsAppBtn">
-                            🚀 Lock Price & Book via WhatsApp
-                        </button>
-                    </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Eco-Friendly Solutions</h3>
+                    <p>We use safe, approved chemicals that are effective yet gentle on the environment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Same-Day Service</h3>
+                    <p>Emergency pest problems? We offer same-day service for urgent infestations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges. Get honest, upfront pricing with our instant calculator.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Family & Pet Safe</h3>
+                    <p>Our treatments are 100% safe for children, pets, and the elderly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is available round the clock to address your pest control needs.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 6. SERVICES SECTION (BENTO GRID) -->
-        <section class="services-section" id="services">
-            <div class="container">
-                <div class="section-header">
-                    <span class="eyebrow-text">OUR EXPERTISE</span>
-                    <h2 class="section-title">Comprehensive Pest Eradication Solutions</h2>
-                    <p class="section-subtitle">Scientifically developed, non-toxic formulations tailored for Indian homes and commercial spaces.</p>
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Our Simple 4-Step Process</h2>
+                <p class="section-subtitle">
+                    From booking to follow-up, we make pest control hassle-free and effective.
+                </p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">📞</div>
+                    <h3>Book Your Service</h3>
+                    <p>Call us at <a href="tel:9067257872">9067257872</a> or use our online booking form. We'll schedule a convenient time for your free inspection.</p>
                 </div>
-
-                <div class="services-bento-grid">
-                    <!-- Service 1 (Featured Bento Card) -->
-                    <div class="service-card bento-lg">
-                        <!-- Service 1 — Cockroach & Ant Gel -->
-<div class="service-vector-wrapper photo-placeholder-wrapper">
-    <img src="images/cockroach-ant-control.webp" alt="Cockroach and ant gel treatment">
-    <span class="img-placeholder-label">images/service-1.jpg</span>
-</div>
-
-<!-- Service 2 — Termite Drill-Fill-Seal -->
-<div class="service-vector-wrapper photo-placeholder-wrapper">
-    <img src="images/termite-control.webp" alt="Termite drill-fill-seal barrier treatment">
-    <span class="img-placeholder-label">images/service-2.jpg</span>
-</div>
-
-<!-- Service 3 — Bed Bug Thermal -->
-<div class="service-vector-wrapper photo-placeholder-wrapper">
-    <img src="images/bedbug-control.webp" alt="Bed bug thermal eradication treatment">
-    <span class="img-placeholder-label">images/service-3.jpg</span>
-</div>
-
-<!-- Service 4 — Rodent Proofing -->
-<div class="service-vector-wrapper photo-placeholder-wrapper">
-    <img src="images/rodent-control.webp" alt="Rodent and mouse proofing treatment">
-    <span class="img-placeholder-label">images/service-4.jpg</span>
-</div>
-
-<!-- Service 5 — Mosquito Vector Control -->
-<div class="service-vector-wrapper photo-placeholder-wrapper">
-    <img src="images/mosquito-control.webp" alt="Mosquito and vector control fogging">
-    <span class="img-placeholder-label">images/service-5.jpg</span>
-</div>
-
-<!-- Service 6 — Commercial Food Sanitization -->
-<div class="service-vector-wrapper photo-placeholder-wrapper">
-    <img src="images/commercial-sanitization.webp" alt="Commercial food-grade sanitization treatment">
-    <span class="img-placeholder-label">images/service-6.jpg</span>
-</div>                        <div class="service-content">
-                            <h3 class="service-title">Commercial Food Sanitization</h3>
-                            <p class="service-desc">HACCP compliant sanitization designed for commercial kitchens, hotels, food processing plants, and corporate offices.</p>
-                            <div class="service-footer">
-                                <span class="service-price">Custom Quote</span>
-                                <button class="btn btn-orange btn-sm open-modal-btn" data-service="Commercial Food Grade Sanitization">Book Now</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🔍</div>
+                    <h3>Thorough Inspection</h3>
+                    <p>Our certified technician will visit your property to assess the pest problem and identify the root cause.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">💨</div>
+                    <h3>Professional Treatment</h3>
+                    <p>We'll implement the most effective treatment plan using industry-approved methods and chemicals.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">🛡️</div>
+                    <h3>Follow-up Guarantee</h3>
+                    <p>We provide warranty-backed service with free follow-up treatments if pests return within the warranty period.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 7. WHY CHOOSE US -->
-        <section class="why-us-section" id="why-us">
-            <div class="container">
-                <div class="why-us-grid">
-                    <div class="why-us-info">
-                        <span class="eyebrow-text">UNMATCHED TRUST</span>
-                        <h2 class="section-title">Why Jay Vijay Pest Control is Solapur's #1 Choice</h2>
-                        <p class="section-subtitle">15 years of dedicated service in Solapur district with government licensing, eco-friendly chemical formulations, and guaranteed post-treatment support.</p>
-
-                        <div class="features-list">
-                            <div class="feature-item">
-                                <div class="feature-icon">📜</div>
-                                <div class="feature-text">
-                                    <h4>Government Licensed & Certified</h4>
-                                    <p>Fully certified operators compliant with Maharashtra Pest Control Regulations & CPCB safety guidelines.</p>
-                                </div>
-                            </div>
-
-                            <div class="feature-item">
-                                <div class="feature-icon">🐾</div>
-                                <div class="feature-text">
-                                    <h4>100% Safe for Family & Pets</h4>
-                                    <p>Odorless, WHO-graded chemicals safe for infants, pregnant women, elderly members, and household pets.</p>
-                                </div>
-                            </div>
-
-                            <div class="feature-item">
-                                <div class="feature-icon">💰</div>
-                                <div class="feature-text">
-                                    <h4>Transparent Pricing, No Hidden Charges</h4>
-                                    <p>Upfront written estimates. What you see on our calculator is exactly what you pay on inspection day.</p>
-                                </div>
-                            </div>
-
-                            <div class="feature-item">
-                                <div class="feature-icon">🛡️</div>
-                                <div class="feature-text">
-                                    <h4>Post-Treatment Warranty Included</h4>
-                                    <p>Complimentary free re-treatments provided if pests reappear during your warranty period.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="why-us-media">
-                        <div class="media-card-wrapper">
-                            <svg width="100%" height="320" viewBox="0 0 480 320" fill="none">
-                                <rect width="480" height="320" fill="#181B1E"/>
-                                <circle cx="240" cy="160" r="90" fill="#A0E426" fill-opacity="0.15"/>
-                                <text x="240" y="140" text-anchor="middle" font-size="60">🛡️</text>
-                                <text x="240" y="210" text-anchor="middle" font-family="Space Grotesk" font-size="22" font-weight="bold" fill="#A0E426">CERTIFIED SAFETY SHIELD</text>
-                                <text x="240" y="240" text-anchor="middle" font-family="Inter" font-size="14" fill="#FFFFFF">15 Years Solapur Experience</text>
-                            </svg>
-                            <div class="floating-badge">
-                                <span class="badge-icon">✅</span>
-                                <div class="badge-info">
-                                    <strong>100% Odorless Gel</strong>
-                                    <span>No Kitchen Emptying Required</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Customer Feedback</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">
+                    Don't just take our word for it. Here's what our satisfied customers have to say about our services.
+                </p>
             </div>
-        </section>
-
-        <!-- 8. HOW IT WORKS -->
-        <section class="how-it-works-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="eyebrow-text">SIMPLE 4-STEP PROCESS</span>
-                    <h2 class="section-title">How Our Treatment Process Works</h2>
-                    <p class="section-subtitle">From instant online booking to guaranteed post-service protection in 4 seamless steps.</p>
-                </div>
-
-                <div class="steps-flow-grid">
-                    <div class="step-card">
-                        <div class="step-badge">01</div>
-                        <h3 class="step-title">Book Inspection</h3>
-                        <p class="step-desc">Select your service via our Instant Calculator or WhatsApp form in less than 60 seconds.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
                     </div>
-                    <div class="step-card">
-                        <div class="step-badge">02</div>
-                        <h3 class="step-title">Free Site Survey</h3>
-                        <p class="step-desc">Our certified specialist conducts a thorough infestation audit of hidden nesting hotspots.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-badge">03</div>
-                        <h3 class="step-title">Safe Treatment</h3>
-                        <p class="step-desc">Precision application using odorless gel, herbal sprays, or chemical drill-fill barriers.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-badge">04</div>
-                        <h3 class="step-title">Warranty & Follow-Up</h3>
-                        <p class="step-desc">Receive your official written warranty certificate and scheduled preventive checkups.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 9. TESTIMONIALS -->
-        <section class="testimonials-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="eyebrow-text">REAL REVIEWS</span>
-                    <h2 class="section-title">Loved by 10,000+ Property Owners in Solapur</h2>
-                    <p class="section-subtitle">See why homeowners, society managers, and business owners across Solapur district rely on Jay Vijay Pest Control.</p>
-                </div>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                        <p class="review-text">"We had a severe cockroach issue in our kitchen in Vijapur Road. Jay Vijay's team came, applied odorless gel, and within 48 hours there was not a single bug left! Unbelievable speed."</p>
-                        <div class="reviewer-info">
-                            <div class="reviewer-avatar">RP</div>
-                            <div>
-                                <h4 class="reviewer-name">Rajesh Patel</h4>
-                                <span class="reviewer-loc">Vijapur Road, Solapur</span>
-                            </div>
+                    <p class="testimonial-text">
+                        "I had a severe cockroach problem in my kitchen. PV Pest Control came and treated my home, and I haven't seen a single cockroach in 6 months. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" data-placeholder-id="testimonial-1">
+                            [PLACEHOLDER: Customer Avatar — 100x100px, smiling customer]
+                        </div>
+                        <div class="author-info">
+                            <h4>Rajesh Sharma</h4>
+                            <p>Shyam Nagar, Amravati</p>
                         </div>
                     </div>
-
-                    <div class="testimonial-card">
-                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                        <p class="review-text">"Got their 5-Year Termite warranty for our 3 BHK home on New RTO Road. They drilled neat holes, injected chemical, and sealed everything seamlessly. Very professional and polite crew."</p>
-                        <div class="reviewer-info">
-                            <div class="reviewer-avatar">SK</div>
-                            <div>
-                                <h4 class="reviewer-name">Sneha Kulkarni</h4>
-                                <span class="reviewer-loc">New RTO Road, Solapur</span>
-                            </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "Termites were destroying my wooden furniture. PV Pest Control's anti-termite treatment saved my investment. Professional service at a reasonable price."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" data-placeholder-id="testimonial-2">
+                            [PLACEHOLDER: Customer Avatar — 100x100px, smiling customer]
+                        </div>
+                        <div class="author-info">
+                            <h4>Priya Deshmukh</h4>
+                            <p>Congress Nagar, Amravati</p>
                         </div>
                     </div>
-
-                    <div class="testimonial-card">
-                        <div class="review-stars">⭐⭐⭐⭐⭐</div>
-                        <p class="review-text">"We run a restaurant near Solapur RTO and needed HACCP compliant pest control immediately. They dispatched a technician in 25 minutes. Transparent pricing with 15 years of solid reputation."</p>
-                        <div class="reviewer-info">
-                            <div class="reviewer-avatar">VP</div>
-                            <div>
-                                <h4 class="reviewer-name">Vikram Patil</h4>
-                                <span class="reviewer-loc">Solapur City</span>
-                            </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "My office had a rat problem that was damaging important documents. PV Pest Control's rodent treatment solved the issue completely. Very satisfied with their service."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" data-placeholder-id="testimonial-3">
+                            [PLACEHOLDER: Customer Avatar — 100x100px, smiling customer]
+                        </div>
+                        <div class="author-info">
+                            <h4>Amit Patel</h4>
+                            <p>Rajendra Colony, Amravati</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">
+                        "I signed up for their Annual Maintenance Contract, and it's been worth every penny. No more pest worries, and their team is always prompt and professional."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" data-placeholder-id="testimonial-4">
+                            [PLACEHOLDER: Customer Avatar — 100x100px, smiling customer]
+                        </div>
+                        <div class="author-info">
+                            <h4>Meera Kulkarni</h4>
+                            <p>Amravati City</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 10. PRICING / AMC PLANS -->
-        <section class="pricing-section" id="pricing">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="eyebrow-text">TRANSPARENT PLANS</span>
-                    <h2 class="section-title">Simple Maintenance & Treatment Plans</h2>
-                    <p class="section-subtitle">Choose between targeted single treatments or hassle-free year-round AMC plans.</p>
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Pest Control Gallery</h2>
+                <p class="section-subtitle">
+                    A glimpse into our professional pest control treatments and satisfied customers.
+                </p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-placeholder-id="gallery-1">
+                    [PLACEHOLDER: Gallery Image 1 — 800x600px, technician inspecting property]
                 </div>
-
-                <div class="pricing-grid">
-                    <!-- Plan 1 -->
-                    <div class="pricing-card">
-                        <h3 class="plan-name">One-Time Treatment</h3>
-                        <p class="plan-desc">Ideal for immediate single pest infestations.</p>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>1,499 <span class="price-period">/ visit</span>
-                        </div>
-                        <ul class="plan-features">
-                            <li>✔️ Single Intensive Gel / Spray Visit</li>
-                            <li>✔️ 100% Odorless & Safe Chemicals</li>
-                            <li>✔️ 30-Day Service Guarantee</li>
-                            <li>✔️ Free Basic Inspection</li>
-                        </ul>
-                        <button class="btn btn-outline-dark full-width open-modal-btn" data-service="One-Time Treatment Plan">Choose Plan</button>
-                    </div>
-
-                    <!-- Plan 2 (Popular AMC) -->
-                    <div class="pricing-card popular-card">
-                        <div class="popular-ribbon">Most Popular</div>
-                        <h3 class="plan-name">Annual AMC Shield</h3>
-                        <p class="plan-desc">Complete 365-day protection for peace of mind.</p>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>3,999 <span class="price-period">/ year</span>
-                        </div>
-                        <ul class="plan-features">
-                            <li>✔️ 4 Scheduled Quarterly Treatments</li>
-                            <li>✔️ Free Unlimited Audit & Touch-ups</li>
-                            <li>✔️ 365 Days Unconditional Warranty</li>
-                            <li>✔️ Covers Cockroaches, Ants & Rodents</li>
-                            <li>✔️ Priority 30-Min Dispatch</li>
-                        </ul>
-                        <button class="btn btn-orange full-width open-modal-btn" data-service="Annual AMC Shield (Most Popular)">Choose Plan</button>
-                    </div>
-
-                    <!-- Plan 3 -->
-                    <div class="pricing-card">
-                        <h3 class="plan-name">Half-Yearly AMC</h3>
-                        <p class="plan-desc">Bi-annual protection for moderate risks.</p>
-                        <div class="plan-price">
-                            <span class="currency">₹</span>2,499 <span class="price-period">/ 6 months</span>
-                        </div>
-                        <ul class="plan-features">
-                            <li>✔️ 2 Scheduled Bi-Annual Visits</li>
-                            <li>✔️ 1 Free Emergency Touch-Up Visit</li>
-                            <li>✔️ 180 Days Service Warranty</li>
-                            <li>✔️ Odorless & Non-Toxic Formulas</li>
-                        </ul>
-                        <button class="btn btn-outline-dark full-width open-modal-btn" data-service="Half-Yearly AMC Plan">Choose Plan</button>
-                    </div>
+                <div class="gallery-item" data-placeholder-id="gallery-2">
+                    [PLACEHOLDER: Gallery Image 2 — 800x600px, termite treatment in progress]
+                </div>
+                <div class="gallery-item" data-placeholder-id="gallery-3">
+                    [PLACEHOLDER: Gallery Image 3 — 800x600px, cockroach control treatment]
+                </div>
+                <div class="gallery-item" data-placeholder-id="gallery-4">
+                    [PLACEHOLDER: Gallery Image 4 — 800x600px, bed bug treatment equipment]
+                </div>
+                <div class="gallery-item" data-placeholder-id="gallery-5">
+                    [PLACEHOLDER: Gallery Image 5 — 800x600px, rodent trapping setup]
+                </div>
+                <div class="gallery-item" data-placeholder-id="gallery-6">
+                    [PLACEHOLDER: Gallery Image 6 — 800x600px, mosquito fogging treatment]
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- 11. CONTACT + LEAD FORM -->
-        <section class="contact-section" id="contact">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <span class="eyebrow-text">GET IN TOUCH</span>
-                        <h2 class="section-title">Schedule Your Free Site Inspection</h2>
-                        <p class="section-subtitle">Fill out the quick form or call us directly. Our pest control specialists are ready 24/7 to solve your pest emergency.</p>
-
-                        <div class="contact-details-list">
-                            <div class="contact-detail-item">
-                                <span class="detail-icon">📍</span>
-                                <div>
-                                    <strong>Office Address:</strong>
-                                    <p>Jay Vijay Pest Control, 10 B Sonamata nagar, New RTO Road, Vijapur Rd, Solapur, Maharashtra 413004</p>
-                                </div>
-                            </div>
-
-                            <div class="contact-detail-item">
-                                <span class="detail-icon">📞</span>
-                                <div>
-                                    <strong>Phone / Emergency Helpline:</strong>
-                                    <p><a href="tel:+919067257872">+91 90672 57872</a> / <a href="https://wa.me/918329931123?text=Hi%2C%20I%20need%20pest%20control">+91 83299 31123 (WhatsApp)</a></p>
-                                </div>
-                            </div>
-
-                            <div class="contact-detail-item">
-                                <span class="detail-icon">✉️</span>
-                                <div>
-                                    <strong>Email Support:</strong>
-                                    <p><a href="mailto:info@jayvijaypestcontrol.com">info@jayvijaypestcontrol.com</a></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="map-placeholder-card">
-                            <div class="map-icon">🗺️</div>
-                            <p><strong>Service Area Map:</strong> Serving All Areas Across Solapur District (Vijapur Rd, New RTO Road, Barshi, Pandharpur, Akkalkot)</p>
-                        </div>
-                    </div>
-
-                    <!-- Direct Lead Form Card -->
-                    <div class="contact-form-card">
-                        <h3>Get Instant Free Quote</h3>
-                        <p class="form-subtext">Direct booking connects directly to our WhatsApp dispatch line.</p>
-
-                        <form id="contactLeadForm" class="lead-form">
-                            <div class="form-group">
-                                <label for="contactName">Your Name *</label>
-                                <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. Ramesh Sharma" required>
-                                <span class="error-msg">Please enter your name</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contactPhone">Phone Number *</label>
-                                <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="e.g. 9876543210" required>
-                                <span class="error-msg">Please enter a valid 10-digit mobile number</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contactService">Service Required *</label>
-                                <select id="contactService" name="service" class="form-control" required>
-                                    <option value="">Select a service...</option>
-                                    <option value="Cockroach & Ant Control">Cockroach & Ant Control</option>
-                                    <option value="Termite 5-Year Shield">Termite 5-Year Shield</option>
-                                    <option value="Bed Bug Eradication">Bed Bug Eradication</option>
-                                    <option value="Rodent Proofing">Rodent Proofing</option>
-                                    <option value="Mosquito Vector Control">Mosquito Vector Control</option>
-                                    <option value="Commercial Sanitization">Commercial Sanitization</option>
-                                    <option value="Annual AMC Plan">Annual AMC Plan</option>
-                                    <option value="General Consultation / Inspection">General Consultation / Inspection</option>
-                                </select>
-                                <span class="error-msg">Please select a service</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contactAddress">Address / Locality *</label>
-                                <input type="text" id="contactAddress" name="address" class="form-control" placeholder="e.g. Vijapur Rd, Solapur" required>
-                                <span class="error-msg">Please enter your area / address</span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contactMessage">Additional Details (Optional)</label>
-                                <textarea id="contactMessage" name="message" class="form-control" rows="3" placeholder="Describe the severity or preferred time..."></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-orange full-width btn-lg">Get My Free Quote via WhatsApp</button>
-                        </form>
-                    </div>
+    <!-- Final CTA Banner -->
+    <section class="final-cta" id="contact">
+        <div class="container">
+            <div class="cta-content">
+                <span class="cta-tag">Ready to Go Pest-Free?</span>
+                <h2 class="cta-title">Book Your Free Inspection Today</h2>
+                <p class="cta-subtitle">
+                    Don't let pests take over your home or business. Contact us now for a free, no-obligation inspection and quote.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-book-now" id="final-cta-btn">
+                        <span>Book Now</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="tel:9067257872" class="btn btn-secondary">
+                        <span class="btn-icon">📞</span>
+                        <span>Call Now: 9067257872</span>
+                    </a>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- 12. FOOTER -->
-    <footer class="site-footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand-col">
-                    <a href="#hero" class="brand-logo light-logo">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
                         <span class="logo-icon">🛡️</span>
-                        <span class="logo-text">Jay Vijay <span class="accent-text">Pest Control</span></span>
+                        <span class="logo-text">PV Pest Control Services</span>
                     </a>
-                    <p class="footer-brand-desc">Government certified pest eradication experts with 15 years experience serving Solapur district with safe, odorless, long-term protection for homes & businesses.</p>
+                    <p class="footer-tagline">
+                        Professional pest control solutions for homes and businesses in Amravati and surrounding areas.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="footer-links-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#design-showcase">Pest Radar</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#calculator">Instant Calculator</a></li>
-                        <li><a href="#why-us">Why Choose Us</a></li>
-                        <li><a href="#pricing">AMC Plans</a></li>
-                        <li><a href="#contact">Contact & Quotes</a></li>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span><a href="tel:9067257872">9067257872</a></span>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Shop No 04, Rana Complex, Congress Nagar Rd, Rajendra Colony, Shyam Nagar, Amravati, Maharashtra 444606</span>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <span>Serving Amravati & Surrounding Areas</span>
+                        </li>
                     </ul>
                 </div>
-
-                <div class="footer-areas-col">
-                    <h4>Service Coverage Areas</h4>
-                    <ul class="areas-list">
-                        <li>📍 Solapur City & Vijapur Road</li>
-                        <li>📍 New RTO Road & Sonamata Nagar</li>
-                        <li>📍 Barshi, Pandharpur & Solapur District</li>
-                        <li>📍 Akkalkot & Mohol Regions</li>
-                        <li>📍 Solapur MIDC & Industrial Area</li>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul class="services-list">
+                        <li><a href="#services">General Pest Control</a></li>
+                        <li><a href="#services">Termite Control</a></li>
+                        <li><a href="#services">Cockroach Control</a></li>
+                        <li><a href="#services">Bed Bug Treatment</a></li>
+                        <li><a href="#services">Rodent Control</a></li>
+                        <li><a href="#services">Mosquito Control</a></li>
+                        <li><a href="#services">Wood Borer Treatment</a></li>
+                        <li><a href="#services">Annual Maintenance Contract</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="links-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#calculator">Calculator</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2026 Jay Vijay Pest Control. All Rights Reserved.</p>
-                <p class="credit-line">Website by <strong>ebookcharm Web Services</strong></p>
+                <p class="copyright">
+                    &copy; 2024 PV Pest Control Services. All rights reserved.
+                </p>
+                <p class="footer-credit">
+                    Website by <a href="#" target="_blank">ebookcharm Web Services</a>
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- DESIGN CUSTOMIZER DRAWER PANEL -->
-    <div class="drawer-overlay" id="designDrawerOverlay">
-        <div class="drawer-panel">
-            <div class="drawer-title-bar">
-                <h3>🎨 Design Studio & Themes</h3>
-                <button class="modal-close-btn" id="drawerCloseBtn">&times;</button>
-            </div>
-            <p style="color: var(--color-gray-400); font-size: 0.9rem; margin-bottom: 1.5rem;">
-                Switch between 4 hand-crafted visual design themes tailored for Jay Vijay Pest Control:
-            </p>
-
-            <div class="theme-options-grid">
-                <!-- Theme 1 -->
-                <div class="theme-card-option active" data-theme="theme-urban-guard">
-                    <div class="theme-color-dots">
-                        <span class="color-dot dot-charcoal"></span>
-                        <span class="color-dot dot-lime"></span>
-                    </div>
-                    <strong>Urban Guard</strong>
-                    <div style="font-size: 0.75rem; color: var(--color-gray-400); margin-top: 0.2rem;">Charcoal & Electric Lime</div>
-                </div>
-
-                <!-- Theme 2 -->
-                <div class="theme-card-option" data-theme="theme-bio-eco">
-                    <div class="theme-color-dots">
-                        <span class="color-dot dot-emerald"></span>
-                        <span class="color-dot dot-mint"></span>
-                    </div>
-                    <strong>Bio-Eco Herbal</strong>
-                    <div style="font-size: 0.75rem; color: var(--color-gray-400); margin-top: 0.2rem;">Emerald & Fresh Pearl</div>
-                </div>
-
-                <!-- Theme 3 -->
-                <div class="theme-card-option" data-theme="theme-cyber-shield">
-                    <div class="theme-color-dots">
-                        <span class="color-dot dot-navy"></span>
-                        <span class="color-dot dot-cyan"></span>
-                    </div>
-                    <strong>Cyber Shield</strong>
-                    <div style="font-size: 0.75rem; color: var(--color-gray-400); margin-top: 0.2rem;">Obsidian & Neon Cyan</div>
-                </div>
-
-                <!-- Theme 4 -->
-                <div class="theme-card-option" data-theme="theme-luxury-gold">
-                    <div class="theme-color-dots">
-                        <span class="color-dot dot-ebony"></span>
-                        <span class="color-dot dot-gold"></span>
-                    </div>
-                    <strong>Luxury Gold</strong>
-                    <div style="font-size: 0.75rem; color: var(--color-gray-400); margin-top: 0.2rem;">Royal Amber & Warm Ebony</div>
-                </div>
-            </div>
-
-            <button class="btn btn-orange full-width" type="button" onclick="document.getElementById('designDrawerOverlay').classList.remove('active');">
-                Apply & Close
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="booking-modal">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
             </button>
-        </div>
-    </div>
-
-    <!-- REUSABLE BOOK NOW MODAL -->
-    <div class="modal-overlay" id="bookModalOverlay" aria-hidden="true">
-        <div class="modal-card" role="dialog" aria-labelledby="modalTitle">
-            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
             <div class="modal-header">
-                <span class="modal-badge">⚡ Quick Booking</span>
-                <h3 id="modalTitle">Book Pest Treatment</h3>
-                <p>Fill out the details below to confirm your booking directly on WhatsApp.</p>
+                <h2 class="modal-title" id="modal-title">Book Your Pest Control Service</h2>
+                <p class="modal-subtitle">Fill in your details and we'll contact you shortly.</p>
             </div>
-
-            <form id="modalBookingForm" class="modal-form">
-                <div class="form-group">
-                    <label for="modalName">Full Name *</label>
-                    <input type="text" id="modalName" class="form-control" placeholder="e.g. Amit Verma" required>
+            <form class="modal-form" id="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-name">Full Name *</label>
+                        <input type="text" id="modal-name" class="form-input" placeholder="Enter your full name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-phone">Phone Number *</label>
+                        <input type="tel" id="modal-phone" class="form-input" placeholder="Enter your phone number" required>
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    <label for="modalPhone">Phone Number *</label>
-                    <input type="tel" id="modalPhone" class="form-control" placeholder="10-digit Mobile Number" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-locality">Locality/Area</label>
+                        <input type="text" id="modal-locality" class="form-input" placeholder="Enter your locality">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-property-type">Property Type</label>
+                        <select id="modal-property-type" class="form-select">
+                            <option value="">Select Property Type</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Independent House">Independent House</option>
+                            <option value="Shop">Shop</option>
+                            <option value="Office">Office</option>
+                            <option value="Warehouse">Warehouse</option>
+                        </select>
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    <label for="modalService">Service Needed *</label>
-                    <input type="text" id="modalService" class="form-control" placeholder="Selected service name" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-pest-concern">Pest Concern</label>
+                        <select id="modal-pest-concern" class="form-select">
+                            <option value="">Select Pest Type</option>
+                            <option value="General Pests">General Pests</option>
+                            <option value="Termites">Termites</option>
+                            <option value="Cockroaches">Cockroaches</option>
+                            <option value="Bed Bugs">Bed Bugs</option>
+                            <option value="Rodents">Rodents</option>
+                            <option value="Mosquitoes">Mosquitoes</option>
+                            <option value="Wood Borer">Wood Borer</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-date">Preferred Date</label>
+                        <input type="date" id="modal-date" class="form-input">
+                    </div>
                 </div>
-
                 <div class="form-group">
-                    <label for="modalAddress">Address / Locality *</label>
-                    <input type="text" id="modalAddress" class="form-control" placeholder="Flat No, Building, Locality" required>
+                    <label for="modal-notes">Additional Notes</label>
+                    <textarea id="modal-notes" class="form-textarea" placeholder="Any additional information or special requests..."></textarea>
                 </div>
-
-                <div class="form-group">
-                    <label for="modalDate">Preferred Date (Optional)</label>
-                    <input type="date" id="modalDate" class="form-control">
+                <div class="modal-actions">
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Book Now</span>
+                        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
                 </div>
-
-                <button type="submit" class="btn btn-orange full-width btn-lg">Confirm Booking via WhatsApp</button>
             </form>
         </div>
     </div>
 
-    <!-- FLOATING WHATSAPP BUTTON -->
-    <a href="https://wa.me/918329931123?text=Hi%2C%20I%20need%20pest%20control%20service" class="floating-wa-btn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-        <span class="wa-icon">💬</span>
-        <span class="wa-text">Chat with Us</span>
-    </a>
-
-    <!-- STICKY BOTTOM ACTION BAR (MOBILE ONLY) -->
-    <div class="mobile-sticky-bar">
-        <a href="tel:+919067257872" class="mobile-action-btn call-btn">
-            <span class="btn-icon">📞</span> Call
-        </a>
-        <button class="mobile-action-btn theme-trigger-btn call-btn">
-            🎨 Theme
-        </button>
-        <a href="https://wa.me/918329931123?text=Hi%2C%20I%20need%20pest%20control%20service" class="mobile-action-btn wa-btn" target="_blank" rel="noopener">
-            💬 WA
-        </a>
-        <button class="mobile-action-btn book-btn open-modal-btn" data-service="Quick Mobile Booking">
-            ⚡ Book
-        </button>
+    <!-- Redirecting Message -->
+    <div class="redirect-message" id="redirect-message">
+        <div class="redirect-content">
+            <div class="redirect-icon">✅</div>
+            <h3>Redirecting you to WhatsApp...</h3>
+            <p>Please wait while we connect you with our team.</p>
+        </div>
     </div>
-
-    <!-- JavaScript File -->
-    <script src="script.js"></script>
 </body>
 </html>
